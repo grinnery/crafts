@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SVC=${PWD##*/}
-PORT=25566
+PORT=25565
 
 docker rm -f $SVC
 docker rmi $SVC

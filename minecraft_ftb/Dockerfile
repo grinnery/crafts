@@ -8,6 +8,7 @@ RUN wget -q https://minecraft.curseforge.com/projects/project-ozone-2-reloaded/f
 	rm server.zip
 
 COPY ops.json /server/ops.json
+COPY server.properties /server/server.properties
 
 VOLUME [/server/config]
 VOLUME [/server/world]
