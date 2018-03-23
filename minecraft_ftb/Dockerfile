@@ -3,7 +3,7 @@ FROM openjdk:alpine
 RUN apk update && apk add ca-certificates wget && update-ca-certificates && rm -rf /var/cache/apk/*
 
 WORKDIR /server
-RUN wget -q https://addons-origin.cursecdn.com/files/2481/284/FTBPresentsSkyfactory3Server_3.0.15.zip -O server.zip &&\
+RUN wget -q https://minecraft.curseforge.com/projects/project-ozone-2-reloaded/files/2509703/download -O server.zip &&\
 	unzip server.zip &&\
 	rm server.zip &&\
 	echo "#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula)." > eula.txt  &&\
